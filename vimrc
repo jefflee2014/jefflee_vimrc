@@ -42,7 +42,7 @@ call SetupVAM()
 "VAMActivate PLUGIN_NAME PLUGIN_NAME ..
 
 " OPTION 2: use call vam#ActivateAddons
-call vam#ActivateAddons(['The_NERD_tree','taglist','snipmate','AutoComplPop','L9','Vim_JDE','ctrlp','EasyMotion','surround'],{'auto_install' : 1})
+call vam#ActivateAddons(['The_NERD_tree','taglist','snipmate','AutoComplPop','L9','ctrlp','EasyMotion','surround','cscope','snippets'],{'auto_install' : 1})
 " use <c-x><c-p> to complete plugin names
 
 " OPTION 3: Create a file ~/.vim-srcipts putting a PLUGIN_NAME into each line
@@ -58,3 +58,9 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") &&b:NERDTreeT
 "EasyMotion config
 let g:EasyMotion_leader_key='<Space>'
 
+"taglist config
+map <f9> :Tlist<CR>
+let Tlist_Use_Right_Window = 1
+
+"AutoComplPop config
+"let g:acp_behaviorSnipmateLength=1
