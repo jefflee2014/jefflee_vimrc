@@ -1,4 +1,3 @@
-"git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 set nocompatible              " required (設定vim運行在增強模式下，不與VI相容)
 filetype off                  " required 
